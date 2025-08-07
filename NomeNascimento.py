@@ -1,0 +1,5 @@
+nome=input ('Me diga seu nome: ')
+dia=input ('Que dia você nasceu? ')
+mes=input ('Qual mês você nasceu? ')
+ano=input ('E que ano você nasceu? ')
+print ('Olá,',nome,',você nasceu em',dia,'/',mes,'/',ano)
