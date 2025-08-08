@@ -1,11 +1,11 @@
 while True:
-    num = int(input('DIigte o número que deseja a tabuada: '))
-    cont = 0
-    while cont<=10:
-        print(f'{num} X {cont} = {num * cont}')
-        cont += 1
-
-    escolha = input('Deseja digitar outro número? [S/N]: ')
-    if escolha in 'Nn':
-        print('Obrigado, volte sempre!')
+    n = int(input('Digite um número para tabuada: '))
+    print('-'*15)
+    for t in range(0, 11):
+        produto = n*t
+        print(f'{n}x{t} = {produto}')
+        t += 1
+    print('-'*15)
+    if n<0:
+        print('TABUADA ENCERRADA, volte sempre!')
         break

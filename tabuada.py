@@ -1,4 +1,5 @@
-tab = int(input('Qual tabuada vamos fazer? '))
-quant = int(input('Quantas vezes vamos repetir? '))
-for i in range(quant+1):
-    print('{} X {}= {}'.format(tab, i, tab*i))
+num = int(input('Digite a tabuada que deseja: '))
+c = int(input('Digite até qual número deverá ir: '))
+for t in range(0, c+1):
+    tabuada = num*t
+    print(f'{num} X {t} = {tabuada}')
