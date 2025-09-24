@@ -3,7 +3,7 @@ def  leiaInt(msg):
     valor = 0
     while True:
         num = input(msg)
-        if n.isnumeric():
+        if num.isnumeric():
             valor = int(num)
             ok = True
         else:
@@ -16,4 +16,5 @@ def  leiaInt(msg):
     
 # Programa principal
 n = leiaInt('Digite um número: ')
+
 print(f'Você acabou de digitar o número {n}')
