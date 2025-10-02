@@ -7,7 +7,8 @@ while True:
     print('='*50)
     print('''[1] Adicionar na lista
 [2] Ver a lista
-[3] Sair''')
+[3] Remover produto
+[4] Sair''')
     
     # Escolha da opção
     opcao = int(input('Escolha uma opção: '))
@@ -27,6 +28,14 @@ while True:
         for i, p in enumerate(listaCompras, start=1): # enumerate(listaCompras, start=x) - o i começa no x
             print(f'{i}º - {p}')
     elif opcao == 3:
+        # Vai pedir nome do produto que será removido
+        produto = input('Digite o nome do produto que deseja remover: ').capitalize().strip()
+        if produto in listaCompras:
+            listaCompras.remove(produto)
+            print('Produto removido...')
+        else:
+            print('Este produto não está na lista.')
+    elif opcao == 4:
         # Vai encerrar o programa e mostrar a lista
         print('Encerrando a lista...')
         print('Lista: ')
