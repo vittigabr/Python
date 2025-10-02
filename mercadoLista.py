@@ -33,5 +33,7 @@ while True:
         for i, p in enumerate(listaCompras, start=1):
             print(f'{i}º - {p}')
         print('Adeus!')
-
         break
+    else:
+        # Vai dizer ao usuário escolher uma opção válida
+        print('Opção inválida... Tente novamente.')
