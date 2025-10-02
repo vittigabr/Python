@@ -24,15 +24,13 @@ while True:
     elif opcao == 2:
         # Vai mostrar a Lista
         print('Lista: ')
-        for c in listaCompras:
-            print(f'- {c}')
-        print('\n')
+        for i, p in enumerate(listaCompras, start=1): # enumerate(listaCompras, start=x) - o i começa no x
+            print(f'{i} - {p}')
     elif opcao == 3:
         # Vai encerrar o programa e mostrar a lista
         print('Encerrando a lista...')
         print('Lista: ')
-        for c in listaCompras:
-            print(f'- {c}')
-        print('\n')
+        for i, p in enumerate(listaCompras, start=1):
+            print(f'{i}- {p}')
         print('Adeus!')
         break
