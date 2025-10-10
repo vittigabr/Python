@@ -42,6 +42,11 @@ def main():
     saldo = 1000
     while True: 
         limpar_tela()
+        
+        #Mostra a data e hora atual
+        dataHoraAtual = time.strftime('%d/%m/%Y %H:%M:%S')
+        print(f'Data e Hora Atual: {dataHoraAtual}')
+        
         exibir_menu()
         opcao = int(input('Digite o número da opção desejada: '))
         if opcao == 1:
